@@ -250,7 +250,7 @@ section {
 #advantages .notif {
   margin: 0 auto; }
   #advantages .notif img {
-    width: 25;
+    width: 25px;
     height: auto;
     margin-right: 7px; }
 #advantages .heading_main {
@@ -520,7 +520,7 @@ section.information .right_info {
             justify-content: space-between;
     padding: 0 15px; }
     #footer .menu_footer_wrapper > .menu_footer > b {
-      color: #footer .menu_footer_wrapper > .menu_footer > b #160637;
+      color: #160637;
       margin-bottom: 10px;
       display: block;
       font-size: 18px;
@@ -540,7 +540,7 @@ section.information .right_info {
           #footer .menu_footer_wrapper > .menu_footer > ul > li > a:hover {
             color: #722ED1; }
   #footer b.heading {
-    color: #footer b.heading #160637;
+    color: #160637;
     margin-bottom: 8px;
     display: block;
     font-size: 18px;
@@ -610,8 +610,8 @@ section.information .right_info {
     background-color: #333;
     display: block;
     margin: 6px auto;
-    -webkit-transition: all 0.3 ease-in-out;
-    transition: all 0.3 ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     border-radius: 5px; }
   .hamburger:hover {
     cursor: pointer; }
@@ -640,7 +640,8 @@ section.information .right_info {
     -webkit-transform: translateX(10px);
             transform: translateX(10px); } }
 .animate_graphic {
-  trasition: none;
+  -webkit-transition: none;
+  transition: none;
   -webkit-animation: 1.5s infinite alternate movingAn;
           animation: 1.5s infinite alternate movingAn; }
 
