@@ -527,3 +527,13 @@ section.information
 			opacity: 0
 		&:nth-child(3)
 			transform: translateY(-9px) rotate(-45deg)
+
+@keyframes movingAn
+	from
+		transform: translateX(0)
+	to
+		transform: translateX(10px)
+
+.animate_graphic
+	trasition: none
+	animation: 1.5s infinite alternate movingAn

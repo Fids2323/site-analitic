@@ -30,5 +30,19 @@ $(function() {
 
 //reviews tabs
 
+//yakor
+	$('a.yakor').on('click', function(event){
+		var $anchor=$(this);
+		$('html,body').stop().animate({
+			scrollTop: $($anchor.attr('href')).offset().top -57
+		}, {
+			duration: 2000
+			// specialEasing: {
+			// 	width: "linear",
+			// 	height: "easeInOutCubic"
+			// }
+		});
+		event.preventDefault();
+	});
 
 });
