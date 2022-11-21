@@ -194,7 +194,7 @@ h1, h2, h3, h4
 			color: darken($accent, 10%)
 
 .main_banner
-	padding: 240px 0 380px
+	padding: 200px 0 280px
 	.mb_info
 		>h1
 			color: $dark_accent
@@ -215,8 +215,8 @@ h1, h2, h3, h4
 
 section
 	padding: 100px 0
-	#top_banner
-		padding: 0
+#top_banner
+	padding: 20px 0 0
 
 #advantages
 	.notif
@@ -434,9 +434,10 @@ section.information
 					justify-content: center
 					width: 16px
 					height: 16px
-					transition: transform .4s ease
 					text-decoration: none
-					&:hover
+					>img
+						transition: transform .4s ease
+					&:hover>img
 						transform: translateY(-8PX)
 	.menu_footer_wrapper
 		display: flex
@@ -506,3 +507,23 @@ section.information
 		font-weight: 900
 		margin-top: 66px
 		text-align: center
+
+.hamburger
+	display: none
+	.line
+		width: 24px
+		height: 3px
+		background-color: #333
+		display: block
+		margin: 6px auto
+		transition: all 0.3 ease-in-out
+		border-radius: 5px
+	&:hover
+		cursor: pointer
+	&.is-active .line
+		&:nth-child(1)
+			transform: translateY(9px) rotate(45deg)
+		&:nth-child(2)
+			opacity: 0
+		&:nth-child(3)
+			transform: translateY(-9px) rotate(-45deg)
